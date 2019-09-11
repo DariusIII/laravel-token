@@ -1,10 +1,10 @@
 <?php
 
-namespace Dirape\Token;
+namespace DariusIII\Token;
 
 use Exception;
 
-trait DirapeMultiToken
+trait DariusIIIMultiToken
 {
     /**
      * Generate the tokens.

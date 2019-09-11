@@ -14,19 +14,19 @@ $new_token = $token->Unique($table_name, $column_name, $size);
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-$ composer require dirape/token
+$ composer require dariusiii/token
 ```
 
 Add the service provider to `config/app.php` in the `providers` array, or if you're using Laravel 5.5, this can be done via the automatic package discovery.
 
 ```php
-Dirape\Token\TokenServiceProvider::class
+DariusIII\Token\TokenServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
 
 ```php
-'Token'=>\Dirape\Token\Facades\Facade::class
+'Token'=>\DariusIII\Token\Facades\Facade::class
 ```
 
 ## Documentation
@@ -38,7 +38,7 @@ To use new trait token you need to do some changes in the model that contain the
 
 ##### One token Trait allow you to generate token for one columns in the  table
 
-* To use one column token you need to add `` use DirapeToken;`` in the model .
+* To use one column token you need to add `` use DariusIIIToken;`` in the model .
 * In database we use default column called ``dt_token`` to replace with your column name add  ``  protected $DT_Column='column_name';`` in the model .
 * Token settings are set by default to this value `` ['type' => DT_Unique, 'size' => 40, 'special_chr' => false]`` to replace with your custom settings add  ``    protected $DT_settings=['type'=>DT_Unique,'size'=>60,'special_chr'=>false]; `` in the model .
 * you should know that we use custom constants for our token type
@@ -80,7 +80,7 @@ To use new trait token you need to do some changes in the model that contain the
 
 ##### Multi token allow you to generate tokens for multi columns in the same table
   
-  * To use multi column token you need to add `` use DirapeMultiToken;`` in the model .
+  * To use multi column token you need to add `` use DariusIIIMultiToken;`` in the model .
   * Columns settings are not set by default so you need to make your custom settings in the model
 ```php
   protected $DMT_columns=[

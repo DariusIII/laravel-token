@@ -1,6 +1,6 @@
 <?php
 
-namespace Dirape\Token\Facades;
+namespace DariusIII\Token\Facades;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {

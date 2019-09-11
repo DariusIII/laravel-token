@@ -1,6 +1,6 @@
 <?php
 
-namespace Dirape\Token;
+namespace DariusIII\Token;
 
 use Illuminate\Support\Facades\DB;
 
@@ -9,12 +9,12 @@ class Token
     /**
      * Methods.
      */
-    const UNIQUE = 'Unique';
-    const UNIQUE_NUMBER = 'UniqueNumber';
-    const UNIQUE_STRING = 'UniqueString';
-    const RANDOM = 'Random';
-    const RANDOM_NUMBER = 'RandomNumber';
-    const RANDOM_STRING = 'RandomString';
+    public const UNIQUE = 'Unique';
+    public const UNIQUE_NUMBER = 'UniqueNumber';
+    public const UNIQUE_STRING = 'UniqueString';
+    public const RANDOM = 'Random';
+    public const RANDOM_NUMBER = 'RandomNumber';
+    public const RANDOM_STRING = 'RandomString';
 
     /**
      * Create a unique token.

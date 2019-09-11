@@ -1,10 +1,10 @@
 <?php
 
-namespace Dirape\Token;
+namespace DariusIII\Token;
 
 use Illuminate\Database\Eloquent\Builder;
 
-trait DirapeToken
+trait DariusIIIToken
 {
     /**
      * The default token settings.

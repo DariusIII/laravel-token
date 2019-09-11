@@ -1,6 +1,6 @@
 <?php
 
-namespace Dirape\Token;
+namespace DariusIII\Token;
 
 use Illuminate\Support\ServiceProvider;
 

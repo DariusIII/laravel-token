@@ -1,5 +1,5 @@
 {
-    "name": "dirape/token",
+    "name": "dariusiii/token",
     "description": "Unique Token Generator For Laravel",
     "authors": [
         {
@@ -18,21 +18,21 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "~5.0 || ~4.0"
+        "php": ">=7.2.0",
+        "illuminate/support": "^5.8|^6.0"
     },
     "autoload": {
         "psr-4": {
-            "Dirape\\Token\\": "src/"
+            "DariusIII\\Token\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dirape\\Token\\TokenServiceProvider"
+                "DariusIII\\Token\\TokenServiceProvider"
             ],
             "aliases": {
-                "Token": "Dirape\\Token\\Facades\\Facade"
+                "Token": "DariusIII\\Token\\Facades\\Facade"
             }
         }
     },
