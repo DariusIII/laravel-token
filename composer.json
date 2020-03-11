@@ -32,7 +32,7 @@
                 "DariusIII\\Token\\TokenServiceProvider"
             ],
             "aliases": {
-                "Token": "DariusIII\\Token\\Facades\\Facade"
+                "Token": "DariusIII\\Token\\Facades\\TokenFacade"
             }
         }
     },
