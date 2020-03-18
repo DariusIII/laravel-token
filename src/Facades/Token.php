@@ -2,7 +2,7 @@
 
 namespace DariusIII\Token\Facades;
 
-class TokenFacade extends \Illuminate\Support\Facades\Facade
+class Token extends \Illuminate\Support\Facades\Facade
 {
     /**
      * Get the registered name of the component.

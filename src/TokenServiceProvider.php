@@ -13,33 +13,26 @@ class TokenServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (! defined("DT_STARTED")) {
-            /** @deprecated  */
-            define('DT_STARTED', true);
-            /** @deprecated  */
-            define('DT_Unique', 'Unique');
-            /** @deprecated  */
-            define('DT_UniqueNum', 'UniqueNumber');
-            /** @deprecated  */
-            define('DT_UniqueStr', 'UniqueString');
-            /** @deprecated  */
-            define('DT_Random', 'Random');
-            /** @deprecated  */
-            define('DT_RandomNum', 'RandomNumber');
-            /** @deprecated  */
-            define('DT_RandomStr', 'RandomString');
-        }
+
     }
 
     /**
-     * Register the application services.
-     *
-     * @return void
+     * Register the service provider.
      */
     public function register()
     {
-        $this->app->bind('Token', function () {
-            return new Token;
+        $this->app->singleton('Token', static function ($app) {
+            return $app->make(Token::class);
         });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides(): array
+    {
+        return ['Token'];
     }
 }
